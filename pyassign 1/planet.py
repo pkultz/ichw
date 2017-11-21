@@ -4,9 +4,9 @@ pi = math.pi
 import turtle
 t0,t1,t2,t3,t4,t5,t6 = range(7)
 planet = [t0,t1,t2,t3,t4,t5,t6]
-color = ["yellow","blue","green","red","black","orange","skyblue"]  # You can change the planet's color here #
-a = range(0,301,50)     # You can change the orbit's horizontal length here #
-b = range(0,181,30)     # You can change the orbit's vertical length here #
+color = ["yellow","blue","green","red","black","orange","skyblue"]
+a = range(0,301,50)
+b = range(0,241,40)
 
 for i in range(7):
     planet[i] = turtle.Turtle()
@@ -21,7 +21,7 @@ for i in range(1,7):
     planet[i].down()
 
 x = 150
-k = 10  # If you want them to move longer, increase k #
+k = 100
 for n in range(k * x):
         for i in range(1,7):
             m1 = n * 2 * pi / (i * x)
