@@ -42,31 +42,15 @@ from={0}&to={1}&amt={2}'.format(currency_from, currency_to, amount_from))
         return amount_to
 
 
-def test1():
+def test_exchange():
     assert(exchange('USD', 'EUR', 2.5) == 2.0952375)
-
-
-def test2():
     assert(exchange('USD', 'CNY', 34) == 221.8891)
-
-
-def test3():
     assert(exchange('USD', 'JPY', 7) == 762.01002815)
-
-
-def test4():
     assert(exchange('USD', 'GBP', 561) == 429.898227)
-
-
-def test5():
     assert(exchange('USD', 'SGD', 1.67) == 2.258508)
 
 
 def testAll():
     """test all cases"""
-    test1()
-    test2()
-    test3()
-    test4()
-    test5()
+    test_exchange()
     print("All tests passed")
